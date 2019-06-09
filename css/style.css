@@ -168,8 +168,8 @@
 .rec-text{
   padding-left: 7em;
 
-  padding-top: 4em;
-  min-height: 10em;
+  padding-top: 7em;
+  min-height: 11.8em;
   background-image: url("../images/camera1.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -270,7 +270,7 @@ body {
   font-family: "Roboto";
   font-weight: 100;
   width:100%;
-  font-size: 0.2em;
+  font-size: 0.4em;
   color: #000;
   background-color: #e5e5e5;
 }
