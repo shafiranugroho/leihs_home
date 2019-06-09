@@ -5,7 +5,6 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Varela+Round' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="js/animation.js">
 <link rel="stylesheet" href="css/button-style.css">
 
 
@@ -17,6 +16,12 @@
   <link rel="icon" href="images/icon.png">
   <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
   <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+  <script src="js/jquery.random.js"></script>
+  <script src="js/jquery.random.min.js"></script>
+  <script src="js/chickendinner.js"></script>
+  <script src="js/animation.js"></script>
+
+
   <meta name="robots" content="noindex,follow" />
 </head>
 
@@ -103,8 +108,59 @@
   </div>
 
   <footer class="footer">LEIHS | v1.0 | 2019</footer>
-
 </div>
+
+<section class="sect-banner center-all bg-alpha">
+
+  <!-- Intrinsic ratio styles to maintain height on reload -->
+  <div class="ir">
+    <img class="js-chickendinner" src="#" alt=""/>
+  </div>
+
+    <a class="btn btn-large btn-delta" value="Reload Page" href="#">Reload It Mane!</a>
+
+</section>
+
+<script>
+
+/*----------------------------------------------
+--Chicken Dinner on img tag
+-----------------------------------------------  */
+
+$('.js-chickendinner').chickenDinner({
+    path: 'images/',
+    fadeInTime:2500,
+    TheImages: ['cam1.png', 'cam2.png','cam3.png','cam4.png','cam5.png','cam6.png']
+});
+
+
+/*----------------------------------------------
+--Web font loader - presentation
+-----------------------------------------------  */
+WebFontConfig={
+    google:{families: ['Noto+Serif:400', 'Montserrat:400,700:latin']}
+  };
+
+  (function(){
+    var wf = document.createElement("script");
+    wf.src = ("https:" == document.location.protocol ? "https":"http") +
+             "://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js";
+    wf.type="text/javascript";
+    wf.async="true";
+    var t = document.getElementsByTagName("script")[0];
+    t.parentNode.insertBefore(wf, t)
+})();
+
+
+
+/*----------------------------------------------
+--Reload trigger - presentation
+-----------------------------------------------  */
+$('.btn').click(function() {
+    location.reload();
+});
+</script>
+
 
 </body>
 

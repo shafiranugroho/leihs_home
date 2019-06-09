@@ -274,3 +274,26 @@ body {
   color: #000;
   background-color: #e5e5e5;
 }
+
+.js-chickendinner img, object, embed {
+  max-width: 10em;
+  height: auto;
+ }
+
+section * {
+  z-index: 3; }
+
+.sect-banner {
+  padding: 1em 0; }
+
+.ir {
+ position: relative;
+ padding-bottom: 36%;
+ height: 0;
+}
+.js-chickendinner {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 30%;
+}
