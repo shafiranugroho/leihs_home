@@ -18,7 +18,7 @@
   <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
   <script src="js/jquery.random.js"></script>
   <script src="js/jquery.random.min.js"></script>
-  <script src="js/chickendinner.js"></script>
+  <script src="js/randomizer.js"></script>
   <script src="js/animation.js"></script>
 
 
@@ -53,7 +53,7 @@
     <h2> Canon </h2>
     <p> The EOS 5D Mark II including EF 17-40mm full-frame sensor lens offers exceptionally high resolution, continuous shooting at up to 3.9 B / s and a large ISO range. The innovative concept enables the recording of Full HD videos.</p>
       <div class="button-row">
-				<div><a href="https://leihs.zhdk.ch/borrow" title="ADD TO CART"></a></div>
+				<div><a class="btn" title="ADD TO CART" value="Reload Page" href="#rec"></a></div>
 			</div>
   </aside>
 
@@ -71,7 +71,7 @@
     <img src="images/item-1.png" alt="" />
     <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
     <div class="button-row">
-      <div><a href="https://leihs.zhdk.ch/borrow" title="ADD TO CART"></a></div>
+      <div><a class="btn" title="ADD TO CART" value="Reload Page" href="#rec"></a></div>
     </div>
   </aside>
 
@@ -80,7 +80,7 @@
     <img src="images/item-2.png" alt="" />
     <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
     <div class="button-row">
-      <div><a href="https://leihs.zhdk.ch/borrow" title="ADD TO CART"></a></div>
+      <div><a class="btn" title="ADD TO CART" value="Reload Page" href="#rec"></a></div>
     </div>
   </aside>
 
@@ -89,37 +89,42 @@
     <img src="images/item-3.png" alt="" />
     <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
     <div class="button-row">
-      <div><a href="https://leihs.zhdk.ch/borrow" title="ADD TO CART"></a></div>
+      <div><a class="btn" title="ADD TO CART" value="Reload Page" href="#rec"></a></div>
     </div>
   </aside>
 
 </div>
 
-<div class="wrapper background-tint">
+<div class="wrapper" id="rec">
+
+  <aside class="aside aside-1" align="left">
+    <h4> RECOMMENDED ITEM </h4>
+    <h1> DSLR Canon EOS 5D Mark II </h1>
+    <div class="button-row">
+				<div><a class="btn" title="ADD TO CART" value="Reload Page" href="#rec"></a></div>
+			</div>
+  </aside>
+
+  <aside class="aside aside-2" align="left">
+    <img class="js-randomizer" src="#" alt=""/>
+  </aside>
+
+</div>
+
+<div class="wrapper">
 
   <div class="main rec-text" align="left">
-    <h4> RECOMMENDED ITEM </h4>
+    <h4> NEW ITEM </h4>
     <h1> DSLR Canon EOS 5D Mark II (17-40mm) </h1>
     <h2> Canon </h2>
     <p> The EOS 5D Mark II including EF 17-40mm full-frame sensor lens offers exceptionally high resolution, continuous shooting at up to 3.9 B / s and a large ISO range. The innovative concept enables the recording of Full HD videos.</p>
-      <div class="rec-text button-row">
-				<div><a href="https://leihs.zhdk.ch/borrow" title="ADD TO CART"></a></div>
-			</div>
+    <div class="rec-text button-row">
+      <div><a class="btn" title="ADD TO CART" value="Reload Page" href="#rec"></a></div>
+    </div>
   </div>
 
   <footer class="footer">LEIHS | v1.0 | 2019</footer>
 </div>
-
-<section class="sect-banner center-all bg-alpha">
-
-  <!-- Intrinsic ratio styles to maintain height on reload -->
-  <div class="ir">
-    <img class="js-chickendinner" src="#" alt=""/>
-  </div>
-
-    <a class="btn btn-large btn-delta" value="Reload Page" href="#">Reload It Mane!</a>
-
-</section>
 
 <script>
 
@@ -127,7 +132,7 @@
 --Chicken Dinner on img tag
 -----------------------------------------------  */
 
-$('.js-chickendinner').chickenDinner({
+$('.js-randomizer').randomizer({
     path: 'images/',
     fadeInTime:2500,
     TheImages: ['cam1.png', 'cam2.png','cam3.png','cam4.png','cam5.png','cam6.png']

@@ -105,7 +105,7 @@
 }
 
 .trend h4 {
-  padding-top: 2em;
+  padding-top: 5em;
   padding-left: 7em;
 
   font-size: 1.3em;
@@ -136,14 +136,16 @@
 .aside-1 {
   background: #fff;
   height: 30em;
+  padding-left:9em;
+  padding-top: 6em;
 }
 
 .aside-1 img {
   position: relative;
-  top:-7em;
+  top:-10em;
   height:40em;
   width:auto;
-  padding-left: 10em;
+  padding-left: 5em;
 }
 
 .aside-2 {
@@ -174,6 +176,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.rec-text img {
+  padding-left: 200px;
+  height: 0;
+  width: 30%;
 }
 
 .rec-text .button-row {
@@ -216,6 +224,24 @@
 }
 
 .aside-2 h4 {
+  font-size: 1.3em;
+  color: #B0B0B0;
+  letter-spacing: 0.05em;
+}
+
+.aside-1 p {
+  padding-right: 2em;
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.aside-1 h1 {
+  color: #000;
+  font-size: 1.8rem;
+  padding-right: 2.0rem;
+}
+
+.aside-1 h4 {
   font-size: 1.3em;
   color: #B0B0B0;
   letter-spacing: 0.05em;
@@ -275,11 +301,6 @@ body {
   background-color: #e5e5e5;
 }
 
-.js-chickendinner img, object, embed {
-  max-width: 10em;
-  height: auto;
- }
-
 section * {
   z-index: 3; }
 
@@ -287,13 +308,13 @@ section * {
   padding: 1em 0; }
 
 .ir {
- position: relative;
  padding-bottom: 36%;
  height: 0;
 }
-.js-chickendinner {
- position: absolute;
- top: 0;
- left: 0;
- width: 30%;
+
+.js-randomizer {
+padding-top: -50em;
+padding-left:0em;
+width: 95%;
+height:auto;
 }
